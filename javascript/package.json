@@ -11,7 +11,7 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "jest": "^23.2.0",
-    "npm": "^6.3.0"
+    "jest": "^24.8.0",
+    "npm": "^6.10.0"
   }
 }

@@ -11,7 +11,7 @@ To begin, fork this repository and checkout your fork.
 
 Next, create a branch for your solution. Name it something descriptive, e.g. "sarahs-python-solution." Work in this branch and commit your changes as normal.
 
-When you are ready to submit a solution, open a Pull Request from your branch to the master branch of this repository. When you open the pull request, you should see if your tests pass or not. Be sure to give the pull request a meaningful title, and write a thorough description so your submissions are easier to review!
+When you are ready to submit a solution, open a Pull Request from your branch to the `contributions` branch of this repository. When you open the pull request, you should see if your tests pass or not. Be sure to give the pull request a meaningful title, and write a thorough description so your submissions are easier to review!
 
 <img src="pr.png" width="750px" alt="Click to open a pull request"/>
 
