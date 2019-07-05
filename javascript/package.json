@@ -1,17 +1,17 @@
 {
-  "name": "Find-save-places",
-  "version": "1.0.0",
-  "description": "Online-Challenge at Thought Works",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "",
-  "dependencies": {
-    "jest": "^24.8.0",
-    "npm": "^6.10.0"
-  }
+    "name": "spy-safe-places",
+    "version": "1.0.0",
+    "description": "Online-Challenge at Thought Works",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "test:watch": "jest --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "",
+    "dependencies": {
+        "jest": "^24.8.0",
+        "npm": "^6.10.0"
+    }
 }
