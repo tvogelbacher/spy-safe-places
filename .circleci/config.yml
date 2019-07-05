@@ -2,7 +2,8 @@ version: 2
 jobs:
   test-ruby:
     docker:
-      - image: circleci/ruby:2.4.4-jessie
+      # cf.: https://circleci.com/docs/2.0/docker-image-tags.json
+      - image: circleci/ruby:2.6.0-stretch
     steps:
       - checkout
       - run: 
@@ -14,7 +15,7 @@ jobs:
 
   test-javascript:
     docker:
-      - image: circleci/node:10.8-browsers
+      - image: circleci/node:10.16.0-browsers
     steps:
       - checkout
       - run: 
@@ -26,7 +27,7 @@ jobs:
 
   test-python:
     docker:
-      - image: circleci/python:3.7.0
+      - image: circleci/python:3.7.3-stretch
     steps:
       - checkout
       - run:
@@ -43,7 +44,7 @@ jobs:
 
   test-java:
     docker:
-      - image: circleci/openjdk:8-jdk-node-browsers
+      - image: circleci/openjdk:11-jdk-node-browsers
     steps:
       - checkout
       - run:
