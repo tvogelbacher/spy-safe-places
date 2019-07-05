@@ -1,6 +1,6 @@
 # Find safe places in JavaScript
 
-### Getting started
+## Getting started
 
 - cd into project directory
 - Install dependencies: `npm install`
@@ -22,12 +22,12 @@ The other file is holding the tests, with all requirements for this challenge. Y
 
 For each function in the savePlaces.js there is a suite of Jest-tests with example input and expected results from the function in savePlaces.test.js.
 
-__By defaults the tests are disabled. Please enable the tests by replacing 'xdescribe' with 'describe'__
+__By defaults the tests are disabled. Please enable the tests by replacing 'xdescribe' with 'describe'__.
 
 ### Running tests
 
 To run the test:
 
-```
+```console
 npm test
 ```

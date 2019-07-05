@@ -1,49 +1,48 @@
 # Find safe places in Python
 
-### Requirements
+## Requirements
 
 For this exercise we will be using python3.
 
 You can [install requirements manually](#manual-installation), or if you are comfortable using [virtual environments](#virtualenv-installation), a `requirements.txt` file has been provided for your convenience.
 
-#### Manual Installation
+### Manual Installation
 
 To get started manually, install the following packages:
 
 pytest
 
-```
+```console
 pip3 install pytest
 ```
 
-#### virtualenv Installation
+### virtualenv Installation
 
 If you do not have virtualenv installed, first install it by running:
 
-```
+```console
 pip3 install virtualenv
 ```
 
 Next, create a virtual environment by typing:
 
-```
+```console
 python3 -m venv env
 ```
 
 Then, activate the virtual environment as follows:
 
-```
+```console
 source env/bin/activate
 ```
 
 Finally, you can install the requirements from `requirements.txt` as follows:
 
-```
+```console
 pip install -r requirements.txt
 ```
 
 This will also install numpy and scipy for your convenience. However, you are not required to use these packages to complete the exercise.
-
 
 ### Creating the solution
 
@@ -60,11 +59,10 @@ finder.convert_coordinates(['A1', 'B2', 'C3'])
 
 The tests expect that you will use this method; however, you may add other methods to the class as necessary for your solution.
 
-
 ### Running tests
 
 To run the test:
 
-```
+```console
 pytest safe_spaces_test.py
 ```
