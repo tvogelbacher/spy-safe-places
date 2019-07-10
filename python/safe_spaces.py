@@ -3,6 +3,8 @@ class SafetyFinder:
     """A class that contains everything we need to find the
     safest places in the city for Alex to hide out
     """
+    global column, row
+    column, row = 10, 10
 
     def convert_coordinates(self, agents):
         """This method should take a list of alphanumeric coordinates (e.g. 'A6')
@@ -14,10 +16,11 @@ class SafetyFinder:
         """
         zero_indexed = []
         for i in agents:
-            matrix_limit = int(i[1:])
-            if matrix_limit < 11:#so coordinates like 'A12' are not further processed(10x10 matrix)
+            column_limit = int(i[1:])
+            row_limit = ord(i[0]) - 65
+            if row_limit <= row and column_limit <= column:#so coordinates like 'A12' are not further processed(10x10 matrix)
                 #looking for position in unicode is faster than dictionary
-                zero_indexed.append([ord(i[0]) - 65, matrix_limit - 1])
+                zero_indexed.append([row_limit, column_limit - 1])
         return zero_indexed
 
     def find_safe_spaces(self, agents):
@@ -35,9 +38,9 @@ class SafetyFinder:
         greatest_distance = 0
         x = 0
         if agents:
-            while(x != 10):
+            while(x != row):
                 y = 0
-                while(y - 10 != 0):
+                while(y - column != 0):
                     distance = min(abs(i[0] - x) + abs(i[1] - y) for i in agents)
                     if distance == greatest_distance:#happens more often than finding a greater distance
                         safe_spots.append([x, y])
@@ -64,7 +67,7 @@ class SafetyFinder:
             advice.append(chr(i[0] + 65) + str(i[1] + 1))
         if not advice:
             return 'The whole city is safe for Alex! :-)'
-        elif len(advice) == 100:
+        elif len(advice) == column * row:
             return 'There are no safe locations for Alex! :-('
         else:
             return advice
